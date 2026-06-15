@@ -29,7 +29,7 @@ export function Footer() {
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
         <p>
-          Copyright {new Date().getFullYear()} NexaFlow AI. {content.footer.copyright}
+          Copyright {new Date().getFullYear()} {site.name}. {content.footer.copyright}
         </p>
         <p>{content.footer.note}</p>
       </div>

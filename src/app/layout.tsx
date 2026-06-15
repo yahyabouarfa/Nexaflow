@@ -5,7 +5,7 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NexaFlow AI | AI Automation Agents for Business Growth",
+  title: "NexaFlow Agent | AI Automation Agents for Business Growth",
   description:
     "Custom AI agents for support, sales, lead qualification, booking, and workflow automation.",
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "AI customer support",
     "workflow automation",
   ],
-  authors: [{ name: "NexaFlow AI" }],
+  authors: [{ name: "NexaFlow Agent" }],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "NexaFlow AI | AI Automation Agents for Business Growth",
+    title: "NexaFlow Agent | AI Automation Agents for Business Growth",
     description:
       "Custom AI agents for support, sales, lead qualification, booking, and workflow automation.",
     type: "website",

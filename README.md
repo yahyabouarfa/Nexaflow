@@ -1,4 +1,4 @@
-# NexaFlow AI
+# NexaFlow Agent
 
 Premium one-page Next.js landing website for an AI automation agency / AI agent SaaS brand.
 

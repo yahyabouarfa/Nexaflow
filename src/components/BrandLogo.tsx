@@ -12,7 +12,7 @@ export function BrandLogo({ variant = "dark" }: BrandLogoProps) {
     variant === "light" ? "border-white/20" : "border-slate-200";
 
   return (
-    <a href="#home" className="flex items-center gap-3" aria-label="NexaFlow AI home">
+    <a href="#home" className="flex items-center gap-3" aria-label={`${site.name} home`}>
       {site.logo.useImage ? (
         <Image
           src={site.logo.imagePath}
@@ -35,7 +35,7 @@ export function BrandLogo({ variant = "dark" }: BrandLogoProps) {
               NexaFlow
             </span>
             <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan-300">
-              AI
+              Agent
             </span>
           </span>
         </>

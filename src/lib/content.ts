@@ -1,5 +1,5 @@
 export const site = {
-  name: "NexaFlow AI",
+  name: "NexaFlow Agent",
   email: "hello@nexaflow.ai",
   phone: "+1 (555) 012-8942",
   location: "Remote-first automation studio",
@@ -41,7 +41,7 @@ export const localizedContent = {
       headline:
         "We build AI agents that reply to leads, qualify customers, book calls, and update your CRM.",
       subtitle:
-        "NexaFlow AI connects your website, WhatsApp, Instagram, email, calendar, and CRM so repetitive customer conversations and follow-up run automatically, with human handoff when needed.",
+        "NexaFlow Agent connects your website, WhatsApp, Instagram, email, calendar, and CRM so repetitive customer conversations and follow-up run automatically, with human handoff when needed.",
       primaryCta: "Book a Free Demo",
       secondaryCta: "View Pricing",
       outcomes: [
@@ -77,7 +77,7 @@ export const localizedContent = {
         title:
           "Your business is losing time when leads, support, and follow-up depend on manual work.",
         description:
-          "NexaFlow replaces repetitive conversations and admin tasks with AI agents that answer, qualify, book, update, and escalate.",
+          "NexaFlow Agent replaces repetitive conversations and admin tasks with AI agents that answer, qualify, book, update, and escalate.",
       },
       services: {
         eyebrow: "What we automate",
@@ -95,7 +95,7 @@ export const localizedContent = {
         eyebrow: "Use cases",
         title: "Automation playbooks for teams that live on conversations.",
         description:
-          "NexaFlow agents adapt to your audience, channel, and operating model instead of forcing a generic chatbot flow.",
+          "NexaFlow Agent systems adapt to your audience, channel, and operating model instead of forcing a generic chatbot flow.",
       },
       integrations: {
         eyebrow: "Integrations",
@@ -114,11 +114,11 @@ export const localizedContent = {
         title:
           "Turn response speed and operational consistency into growth advantages.",
         description:
-          "NexaFlow agents keep the routine work moving while your team spends more time on judgment, relationships, and strategy.",
+          "NexaFlow Agent keeps the routine work moving while your team spends more time on judgment, relationships, and strategy.",
       },
       testimonials: {
         eyebrow: "Testimonials",
-        title: "Professional teams use NexaFlow to remove friction from follow-up.",
+        title: "Professional teams use NexaFlow Agent to remove friction from follow-up.",
         description:
           "A few representative examples of the outcomes automation-focused teams look for.",
       },
@@ -349,7 +349,7 @@ export const localizedContent = {
     testimonials: [
       {
         quote:
-          "NexaFlow helped us turn inbound inquiries into booked consultations without adding more admin work. The handoff to our team feels natural.",
+          "NexaFlow Agent helped us turn inbound inquiries into booked consultations without adding more admin work. The handoff to our team feels natural.",
         name: "Maya Chen",
         role: "Founder, Studio North",
       },
@@ -375,7 +375,7 @@ export const localizedContent = {
       {
         question: "Can it work with my current tools?",
         answer:
-          "Yes. NexaFlow agents can connect with common CRMs, calendars, inboxes, spreadsheets, ecommerce platforms, automation tools, and chat channels.",
+          "Yes. NexaFlow Agent can connect with common CRMs, calendars, inboxes, spreadsheets, ecommerce platforms, automation tools, and chat channels.",
       },
       {
         question: "Is it safe?",
@@ -460,7 +460,7 @@ export const localizedContent = {
       headline:
         "Agents IA pour repondre aux leads, qualifier, reserver des rendez-vous et mettre a jour votre CRM.",
       subtitle:
-        "NexaFlow AI connecte votre site web, WhatsApp, Instagram, email, calendrier et CRM afin que les conversations repetitives et le suivi client tournent automatiquement, avec transfert humain si necessaire.",
+        "NexaFlow Agent connecte votre site web, WhatsApp, Instagram, email, calendrier et CRM afin que les conversations repetitives et le suivi client tournent automatiquement, avec transfert humain si necessaire.",
       primaryCta: "Reserver une demo",
       secondaryCta: "Voir les tarifs",
       outcomes: [
@@ -496,7 +496,7 @@ export const localizedContent = {
         title:
           "Votre entreprise perd du temps quand les leads, le support et le suivi restent manuels.",
         description:
-          "NexaFlow remplace les conversations repetitives et les taches admin par des agents IA qui repondent, qualifient, reservent, mettent a jour et escaladent.",
+          "NexaFlow Agent remplace les conversations repetitives et les taches admin par des agents IA qui repondent, qualifient, reservent, mettent a jour et escaladent.",
       },
       services: {
         eyebrow: "Ce que nous automatisons",
@@ -515,7 +515,7 @@ export const localizedContent = {
         eyebrow: "Cas d'usage",
         title: "Des automatisations pour les equipes qui vivent des conversations.",
         description:
-          "Les agents NexaFlow s'adaptent a votre audience, vos canaux et votre mode operationnel.",
+          "NexaFlow Agent s'adapte a votre audience, vos canaux et votre mode operationnel.",
       },
       integrations: {
         eyebrow: "Integrations",
@@ -534,12 +534,12 @@ export const localizedContent = {
         title:
           "Transformez la vitesse de reponse et la regularite operationnelle en avantage de croissance.",
         description:
-          "Les agents NexaFlow gardent les taches repetitives en mouvement pendant que votre equipe se concentre sur les decisions et les relations.",
+          "NexaFlow Agent garde les taches repetitives en mouvement pendant que votre equipe se concentre sur les decisions et les relations.",
       },
       testimonials: {
         eyebrow: "Temoignages",
         title:
-          "Des equipes professionnelles utilisent NexaFlow pour fluidifier leur suivi.",
+          "Des equipes professionnelles utilisent NexaFlow Agent pour fluidifier leur suivi.",
         description:
           "Quelques exemples representatifs des resultats recherches par les equipes orientees automatisation.",
       },
@@ -770,7 +770,7 @@ export const localizedContent = {
     testimonials: [
       {
         quote:
-          "NexaFlow nous a aide a transformer les demandes entrantes en consultations reservees sans ajouter d'admin. Le transfert a l'equipe est naturel.",
+          "NexaFlow Agent nous a aide a transformer les demandes entrantes en consultations reservees sans ajouter d'admin. Le transfert a l'equipe est naturel.",
         name: "Maya Chen",
         role: "Fondatrice, Studio North",
       },
@@ -796,7 +796,7 @@ export const localizedContent = {
       {
         question: "Peut-il fonctionner avec mes outils actuels ?",
         answer:
-          "Oui. Les agents NexaFlow peuvent se connecter aux CRM, calendriers, emails, tableurs, plateformes ecommerce, outils d'automatisation et canaux de chat.",
+          "Oui. NexaFlow Agent peut se connecter aux CRM, calendriers, emails, tableurs, plateformes ecommerce, outils d'automatisation et canaux de chat.",
       },
       {
         question: "Est-ce securise ?",
@@ -881,7 +881,7 @@ export const localizedContent = {
       headline:
         "وكلاء IA يردون على العملاء، يؤهلون الفرص، يحجزون المواعيد، ويحدثون CRM.",
       subtitle:
-        "NexaFlow AI يربط موقعك وواتساب وإنستغرام والبريد والتقويم و CRM حتى تعمل المحادثات المتكررة والمتابعة تلقائيا، مع تحويل سلس للإنسان عند الحاجة.",
+        "NexaFlow Agent يربط موقعك وواتساب وإنستغرام والبريد والتقويم و CRM حتى تعمل المحادثات المتكررة والمتابعة تلقائيا، مع تحويل سلس للإنسان عند الحاجة.",
       primaryCta: "احجز عرضا مجانيا",
       secondaryCta: "شاهد الأسعار",
       outcomes: [
@@ -911,7 +911,7 @@ export const localizedContent = {
         title:
           "عملك يخسر وقتا عندما يعتمد العملاء والدعم والمتابعة على العمل اليدوي.",
         description:
-          "NexaFlow يستبدل المحادثات المتكررة والمهام الإدارية بوكلاء يردون ويؤهلون ويحجزون ويحدثون الأدوات ويصعدون الحالات المهمة.",
+          "NexaFlow Agent يستبدل المحادثات المتكررة والمهام الإدارية بوكلاء يردون ويؤهلون ويحجزون ويحدثون الأدوات ويصعدون الحالات المهمة.",
       },
       services: {
         eyebrow: "ماذا نؤتمت",
@@ -929,7 +929,7 @@ export const localizedContent = {
         eyebrow: "حالات الاستخدام",
         title: "أتمتة للفرق التي تعتمد على المحادثات.",
         description:
-          "وكلاء NexaFlow يتكيفون مع جمهورك وقنواتك وطريقة عملك بدلا من فرض تدفق عام.",
+          "NexaFlow Agent يتكيف مع جمهورك وقنواتك وطريقة عملك بدلا من فرض تدفق عام.",
       },
       integrations: {
         eyebrow: "التكاملات",
@@ -947,11 +947,11 @@ export const localizedContent = {
         eyebrow: "النتائج",
         title: "حول سرعة الرد وانتظام العمليات إلى ميزة نمو.",
         description:
-          "وكلاء NexaFlow يحركون العمل المتكرر بينما يركز فريقك على القرارات والعلاقات.",
+          "NexaFlow Agent يحرك العمل المتكرر بينما يركز فريقك على القرارات والعلاقات.",
       },
       testimonials: {
         eyebrow: "آراء العملاء",
-        title: "فرق محترفة تستخدم NexaFlow لتقليل الاحتكاك في المتابعة.",
+        title: "فرق محترفة تستخدم NexaFlow Agent لتقليل الاحتكاك في المتابعة.",
         description:
           "أمثلة واقعية للنتائج التي تبحث عنها الفرق التي تريد الأتمتة.",
       },
@@ -1180,7 +1180,7 @@ export const localizedContent = {
     testimonials: [
       {
         quote:
-          "NexaFlow ساعدنا على تحويل الطلبات الواردة إلى استشارات محجوزة دون زيادة العمل الإداري.",
+          "NexaFlow Agent ساعدنا على تحويل الطلبات الواردة إلى استشارات محجوزة دون زيادة العمل الإداري.",
         name: "Maya Chen",
         role: "مؤسسة Studio North",
       },
@@ -1206,7 +1206,7 @@ export const localizedContent = {
       {
         question: "هل يعمل مع أدواتي الحالية؟",
         answer:
-          "نعم. يمكن ربط وكلاء NexaFlow مع CRM والتقويم والبريد والجداول ومنصات ecommerce وأدوات الأتمتة وقنوات الدردشة.",
+          "نعم. يمكن ربط NexaFlow Agent مع CRM والتقويم والبريد والجداول ومنصات ecommerce وأدوات الأتمتة وقنوات الدردشة.",
       },
       {
         question: "هل هو آمن؟",
