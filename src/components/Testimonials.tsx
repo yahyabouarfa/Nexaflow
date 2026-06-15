@@ -1,6 +1,10 @@
-import { testimonials } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function Testimonials() {
+export function Testimonials({
+  testimonials,
+}: {
+  testimonials: LocalizedContent["testimonials"];
+}) {
   return (
     <div className="grid gap-5 lg:grid-cols-3">
       {testimonials.map((testimonial) => (

@@ -7,7 +7,7 @@ type CardItem = {
 };
 
 type CardGridProps = {
-  items: CardItem[];
+  items: readonly CardItem[];
   variant?: "light" | "dark";
   columns?: "four" | "three";
 };

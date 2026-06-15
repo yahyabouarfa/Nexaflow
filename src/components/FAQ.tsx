@@ -1,6 +1,6 @@
-import { faqs } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function FAQ() {
+export function FAQ({ faqs }: { faqs: LocalizedContent["faqs"] }) {
   return (
     <div className="mx-auto grid max-w-4xl gap-3">
       {faqs.map((faq) => (

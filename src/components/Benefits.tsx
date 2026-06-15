@@ -1,6 +1,6 @@
-import { benefits } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function Benefits() {
+export function Benefits({ benefits }: { benefits: LocalizedContent["benefits"] }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
       {benefits.map((benefit) => (

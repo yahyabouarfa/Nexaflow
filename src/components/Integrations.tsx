@@ -1,6 +1,10 @@
-import { integrations } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function Integrations() {
+export function Integrations({
+  integrations,
+}: {
+  integrations: LocalizedContent["integrations"];
+}) {
   return (
     <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-3">
       {integrations.map((integration) => (

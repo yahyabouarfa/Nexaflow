@@ -1,6 +1,6 @@
-import { steps } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function HowItWorks() {
+export function HowItWorks({ steps }: { steps: LocalizedContent["steps"] }) {
   return (
     <div className="grid gap-4 lg:grid-cols-4">
       {steps.map((step, index) => (

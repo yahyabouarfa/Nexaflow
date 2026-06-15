@@ -2,9 +2,14 @@ import { ArrowRight, ShieldCheck } from "lucide-react";
 
 import { ButtonLink } from "@/components/ButtonLink";
 import { DashboardMockup } from "@/components/DashboardMockup";
-import { site, trustIndicators } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function Hero() {
+type HeroProps = {
+  dashboard: LocalizedContent["dashboard"];
+  hero: LocalizedContent["hero"];
+};
+
+export function Hero({ dashboard, hero }: HeroProps) {
   return (
     <section
       id="home"
@@ -18,30 +23,28 @@ export function Hero() {
         <div className="max-w-3xl">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/8 px-3 py-2 text-xs font-bold text-slate-200 shadow-2xl backdrop-blur">
             <ShieldCheck size={16} className="text-cyan-300" aria-hidden="true" />
-            {site.tagline}
+            {hero.eyebrow}
           </div>
 
-          <h1 className="max-w-5xl text-4xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-            Automate leads, support, sales, and operations with custom AI agents.
+          <h1 className="max-w-5xl text-4xl font-black leading-[1.03] tracking-tight sm:text-5xl lg:text-6xl">
+            {hero.headline}
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-xl">
-            NexaFlow AI designs always-on automation systems that qualify prospects,
-            answer customers, book meetings, update your CRM, and hand off to humans
-            when it matters.
+            {hero.subtitle}
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="#contact">
-              Book a Free Demo
+              {hero.primaryCta}
               <ArrowRight size={17} className="ml-2" aria-hidden="true" />
             </ButtonLink>
             <ButtonLink href="#pricing" variant="secondary">
-              View Pricing
+              {hero.secondaryCta}
             </ButtonLink>
           </div>
 
           <div className="mt-9 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {trustIndicators.map((indicator) => (
+            {hero.outcomes.map((indicator) => (
               <div
                 key={indicator}
                 className="rounded-2xl border border-white/10 bg-white/[0.07] px-4 py-3 text-sm font-bold text-slate-100 backdrop-blur"
@@ -52,7 +55,7 @@ export function Hero() {
           </div>
         </div>
 
-        <DashboardMockup />
+        <DashboardMockup dashboard={dashboard} />
       </div>
     </section>
   );

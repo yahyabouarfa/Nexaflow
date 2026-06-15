@@ -4,9 +4,9 @@ import { Check } from "lucide-react";
 import { useState } from "react";
 
 import { ButtonLink } from "@/components/ButtonLink";
-import { pricingPlans } from "@/lib/content";
+import type { LocalizedContent } from "@/lib/content";
 
-export function PricingSection() {
+export function PricingSection({ pricing }: { pricing: LocalizedContent["pricing"] }) {
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
 
   return (
@@ -30,14 +30,14 @@ export function PricingSection() {
                   : "text-slate-600 hover:text-slate-950"
               }`}
             >
-              {option}
+              {option === "monthly" ? pricing.monthly : pricing.yearly}
             </button>
           ))}
         </div>
       </div>
 
       <div className="grid gap-5 lg:grid-cols-3">
-        {pricingPlans.map((plan) => {
+        {pricing.plans.map((plan) => {
           const price = billing === "monthly" ? plan.monthlyPrice : plan.yearlyPrice;
 
           return (
@@ -51,7 +51,7 @@ export function PricingSection() {
             >
               {plan.highlighted ? (
                 <div className="absolute right-5 top-5 rounded-full bg-cyan-300 px-3 py-1 text-xs font-black text-slate-950">
-                  Most Popular
+                  {pricing.mostPopular}
                 </div>
               ) : null}
 
@@ -66,7 +66,7 @@ export function PricingSection() {
 
               <div className="mt-6 flex items-end gap-2">
                 {price === null ? (
-                  <span className="text-4xl font-black">Custom</span>
+                  <span className="text-4xl font-black">{pricing.custom}</span>
                 ) : (
                   <>
                     <span className="text-5xl font-black">${price}</span>
@@ -75,16 +75,16 @@ export function PricingSection() {
                         plan.highlighted ? "text-slate-300" : "text-slate-500"
                       }`}
                     >
-                      /month
+                      {pricing.perMonth}
                     </span>
                   </>
                 )}
               </div>
 
               {billing === "yearly" && price !== null ? (
-                <p className="mt-2 text-sm font-bold text-cyan-300">Billed yearly</p>
+                <p className="mt-2 text-sm font-bold text-cyan-300">{pricing.billedYearly}</p>
               ) : (
-                <p className="mt-2 text-sm font-bold text-slate-400">Flexible monthly plan</p>
+                <p className="mt-2 text-sm font-bold text-slate-400">{pricing.flexibleMonthly}</p>
               )}
 
               <ButtonLink
