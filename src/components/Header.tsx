@@ -1,7 +1,7 @@
 "use client";
 
-import { Globe2, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { ChevronDown, Globe2, Menu, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 import { BrandLogo } from "@/components/BrandLogo";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -96,26 +96,94 @@ function LanguageSelect({
   locale: Locale;
   onChange: (locale: Locale) => void;
 }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const selectedOption =
+    localeOptions.find((option) => option.code === locale) ?? localeOptions[0];
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    function handlePointerDown(event: PointerEvent) {
+      if (!containerRef.current?.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    }
+
+    window.addEventListener("pointerdown", handlePointerDown);
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("pointerdown", handlePointerDown);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
+
   return (
-    <label
-      className={`inline-flex min-h-11 items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 text-sm font-bold text-white ${
-        fullWidth ? "w-full justify-between" : ""
-      }`}
-    >
-      <span className="sr-only">{label}</span>
-      <Globe2 size={16} className="text-cyan-300" aria-hidden="true" />
-      <select
-        value={locale}
+    <div ref={containerRef} className={`relative ${fullWidth ? "w-full" : ""}`}>
+      <button
+        type="button"
         aria-label={label}
-        onChange={(event) => onChange(event.target.value as Locale)}
-        className="bg-transparent text-sm font-black text-white outline-none"
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen((value) => !value)}
+        className={`inline-flex min-h-11 items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 text-sm font-bold text-white shadow-[0_14px_35px_rgba(2,6,23,0.18)] transition hover:bg-white/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 ${
+          fullWidth ? "w-full justify-between" : "min-w-[92px] justify-center"
+        }`}
       >
-        {localeOptions.map((option) => (
-          <option key={option.code} value={option.code} className="bg-slate-950 text-white">
-            {option.shortLabel}
-          </option>
-        ))}
-      </select>
-    </label>
+        <span className="inline-flex items-center gap-2">
+          <Globe2 size={16} className="text-cyan-300" aria-hidden="true" />
+          <span className="text-sm font-black">{selectedOption.shortLabel}</span>
+        </span>
+        <ChevronDown
+          size={15}
+          className={`text-slate-200 transition ${isOpen ? "rotate-180" : ""}`}
+          aria-hidden="true"
+        />
+      </button>
+
+      {isOpen ? (
+        <div
+          role="listbox"
+          aria-label={label}
+          className={`absolute top-full z-[60] mt-2 overflow-hidden rounded-2xl border border-white/12 bg-slate-950/95 p-1.5 shadow-[0_22px_60px_rgba(2,6,23,0.45)] backdrop-blur-xl ${
+            fullWidth ? "left-0 right-0" : "right-0 min-w-full"
+          }`}
+        >
+          {localeOptions.map((option) => {
+            const isSelected = option.code === locale;
+
+            return (
+              <button
+                key={option.code}
+                type="button"
+                role="option"
+                aria-selected={isSelected}
+                onClick={() => {
+                  onChange(option.code);
+                  setIsOpen(false);
+                }}
+                aria-label={option.label}
+                className={`flex min-h-10 w-full items-center justify-center rounded-xl px-4 text-center text-sm font-black transition ${
+                  isSelected
+                    ? "bg-cyan-300 text-slate-950"
+                    : "text-slate-200 hover:bg-white/10 hover:text-white"
+                }`}
+              >
+                <span>{option.shortLabel}</span>
+              </button>
+            );
+          })}
+        </div>
+      ) : null}
+    </div>
   );
 }
