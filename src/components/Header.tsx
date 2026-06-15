@@ -38,7 +38,7 @@ export function Header() {
             locale={locale}
             onChange={setLocale}
           />
-          <ButtonLink href="#contact" className="min-h-11 px-4">
+          <ButtonLink href="/contact" className="min-h-11 px-4">
             {content.header.cta}
           </ButtonLink>
         </div>
@@ -75,7 +75,7 @@ export function Header() {
                 fullWidth
               />
             </div>
-            <ButtonLink href="#contact" className="mt-3 w-full" onClickCapture={() => setIsOpen(false)}>
+            <ButtonLink href="/contact" className="mt-3 w-full" onClickCapture={() => setIsOpen(false)}>
               {content.header.cta}
             </ButtonLink>
           </div>

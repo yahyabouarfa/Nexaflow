@@ -88,7 +88,7 @@ export function PricingSection({ pricing }: { pricing: LocalizedContent["pricing
               )}
 
               <ButtonLink
-                href="#contact"
+                href="/contact"
                 variant={plan.highlighted ? "primary" : "ghost"}
                 className="mt-7 w-full"
               >

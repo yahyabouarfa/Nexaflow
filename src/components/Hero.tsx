@@ -34,11 +34,11 @@ export function Hero({ dashboard, hero }: HeroProps) {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="#contact">
+            <ButtonLink href="/contact">
               {hero.primaryCta}
               <ArrowRight size={17} className="ml-2" aria-hidden="true" />
             </ButtonLink>
-            <ButtonLink href="#pricing" variant="secondary">
+            <ButtonLink href="/pricing" variant="secondary">
               {hero.secondaryCta}
             </ButtonLink>
           </div>

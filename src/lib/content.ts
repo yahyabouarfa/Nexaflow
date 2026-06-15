@@ -23,12 +23,12 @@ export const localizedContent = {
         "Custom AI agents for support, sales, lead qualification, booking, and workflow automation.",
     },
     navLinks: [
-      { label: "Home", href: "#home" },
-      { label: "Services", href: "#services" },
-      { label: "How It Works", href: "#how-it-works" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "FAQ", href: "#faq" },
-      { label: "Contact", href: "#contact" },
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "How It Works", href: "/how-it-works" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contact", href: "/contact" },
     ],
     header: {
       cta: "Book a Free Demo",
@@ -421,10 +421,10 @@ export const localizedContent = {
       note: "Built for responsible automation and human-ready handoff.",
       links: {
         services: [
-          { label: "Support Agents", href: "#services" },
-          { label: "Lead Qualification", href: "#services" },
-          { label: "Sales Automation", href: "#services" },
-          { label: "Workflow Automation", href: "#services" },
+          { label: "Support Agents", href: "/services" },
+          { label: "Lead Qualification", href: "/services" },
+          { label: "Sales Automation", href: "/services" },
+          { label: "Workflow Automation", href: "/services" },
         ],
         social: [
           { label: "LinkedIn", href: "#" },
@@ -442,12 +442,12 @@ export const localizedContent = {
         "Agents IA sur mesure pour le support, la vente, la qualification des leads, la prise de rendez-vous et l'automatisation des workflows.",
     },
     navLinks: [
-      { label: "Accueil", href: "#home" },
-      { label: "Services", href: "#services" },
-      { label: "Fonctionnement", href: "#how-it-works" },
-      { label: "Tarifs", href: "#pricing" },
-      { label: "FAQ", href: "#faq" },
-      { label: "Contact", href: "#contact" },
+      { label: "Accueil", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Fonctionnement", href: "/how-it-works" },
+      { label: "Tarifs", href: "/pricing" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contact", href: "/contact" },
     ],
     header: {
       cta: "Reserver une demo",
@@ -842,10 +842,10 @@ export const localizedContent = {
       note: "Concu pour une automatisation responsable et un transfert humain clair.",
       links: {
         services: [
-          { label: "Agents support", href: "#services" },
-          { label: "Qualification leads", href: "#services" },
-          { label: "Automatisation ventes", href: "#services" },
-          { label: "Automatisation workflow", href: "#services" },
+          { label: "Agents support", href: "/services" },
+          { label: "Qualification leads", href: "/services" },
+          { label: "Automatisation ventes", href: "/services" },
+          { label: "Automatisation workflow", href: "/services" },
         ],
         social: [
           { label: "LinkedIn", href: "#" },
@@ -863,12 +863,12 @@ export const localizedContent = {
         "وكلاء ذكاء اصطناعي مخصصون للدعم والمبيعات وتأهيل العملاء وحجز المواعيد وأتمتة سير العمل.",
     },
     navLinks: [
-      { label: "الرئيسية", href: "#home" },
-      { label: "الخدمات", href: "#services" },
-      { label: "كيف نعمل", href: "#how-it-works" },
-      { label: "الأسعار", href: "#pricing" },
-      { label: "الأسئلة", href: "#faq" },
-      { label: "تواصل", href: "#contact" },
+      { label: "الرئيسية", href: "/" },
+      { label: "الخدمات", href: "/services" },
+      { label: "كيف نعمل", href: "/how-it-works" },
+      { label: "الأسعار", href: "/pricing" },
+      { label: "الأسئلة", href: "/faq" },
+      { label: "تواصل", href: "/contact" },
     ],
     header: {
       cta: "احجز عرضا مجانيا",
@@ -1252,10 +1252,10 @@ export const localizedContent = {
       note: "مصمم لأتمتة مسؤولة وتحويل واضح للإنسان.",
       links: {
         services: [
-          { label: "وكلاء الدعم", href: "#services" },
-          { label: "تأهيل العملاء", href: "#services" },
-          { label: "أتمتة المبيعات", href: "#services" },
-          { label: "أتمتة سير العمل", href: "#services" },
+          { label: "وكلاء الدعم", href: "/services" },
+          { label: "تأهيل العملاء", href: "/services" },
+          { label: "أتمتة المبيعات", href: "/services" },
+          { label: "أتمتة سير العمل", href: "/services" },
         ],
         social: [
           { label: "LinkedIn", href: "#" },

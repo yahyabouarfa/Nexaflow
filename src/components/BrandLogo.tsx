@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { site } from "@/lib/content";
 
@@ -12,7 +13,7 @@ export function BrandLogo({ variant = "dark" }: BrandLogoProps) {
     variant === "light" ? "border-white/20" : "border-slate-200";
 
   return (
-    <a href="#home" className="flex items-center gap-3" aria-label={`${site.name} home`}>
+    <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} home`}>
       {site.logo.useImage ? (
         <Image
           src={site.logo.imagePath}
@@ -40,6 +41,6 @@ export function BrandLogo({ variant = "dark" }: BrandLogoProps) {
           </span>
         </>
       )}
-    </a>
+    </Link>
   );
 }

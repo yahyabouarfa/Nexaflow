@@ -6,6 +6,19 @@ import { site } from "@/lib/content";
 
 export function Footer() {
   const { content } = useLanguage();
+  const quickLinks: { label: string; href: string }[] = [
+    { label: content.navLinks[0].label, href: "/" },
+    { label: content.sections.problem.eyebrow, href: "/problem" },
+    { label: content.navLinks[1].label, href: "/services" },
+    { label: content.navLinks[2].label, href: "/how-it-works" },
+    { label: content.sections.useCases.eyebrow, href: "/use-cases" },
+    { label: content.sections.integrations.eyebrow, href: "/integrations" },
+    { label: content.navLinks[3].label, href: "/pricing" },
+    { label: content.sections.results.eyebrow, href: "/results" },
+    { label: content.sections.testimonials.eyebrow, href: "/testimonials" },
+    { label: content.navLinks[4].label, href: "/faq" },
+    { label: content.navLinks[5].label, href: "/contact" },
+  ];
 
   return (
     <footer className="bg-slate-950 px-4 pb-10 pt-14 text-white sm:px-6 lg:px-8">
@@ -22,7 +35,7 @@ export function Footer() {
           </div>
         </div>
 
-        <FooterColumn title={content.footer.quickLinksTitle} links={content.navLinks} />
+        <FooterColumn title={content.footer.quickLinksTitle} links={quickLinks} />
         <FooterColumn title={content.footer.servicesTitle} links={content.footer.links.services} />
         <FooterColumn title={content.footer.socialTitle} links={content.footer.links.social} />
       </div>
