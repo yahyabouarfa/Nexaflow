@@ -36,6 +36,7 @@ export const localizedContent = {
       openMenu: "Open navigation menu",
       closeMenu: "Close navigation menu",
     },
+    workflowDetailsCta: "View workflow",
     hero: {
       eyebrow: "AI automation for leads, support, booking, and CRM",
       headline:
@@ -455,6 +456,7 @@ export const localizedContent = {
       openMenu: "Ouvrir le menu",
       closeMenu: "Fermer le menu",
     },
+    workflowDetailsCta: "Voir le workflow",
     hero: {
       eyebrow: "Automatisation IA pour leads, support, rendez-vous et CRM",
       headline:
@@ -876,6 +878,7 @@ export const localizedContent = {
       openMenu: "فتح القائمة",
       closeMenu: "إغلاق القائمة",
     },
+    workflowDetailsCta: "ØªÙØ§ØµÙŠÙ„ Ø³ÙŠØ± Ø§Ù„Ø¹Ù…Ù„",
     hero: {
       eyebrow: "أتمتة ذكية للعملاء والدعم والحجز و CRM",
       headline:

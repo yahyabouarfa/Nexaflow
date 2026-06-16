@@ -15,5 +15,6 @@ pnpm-debug.log*
 dev-server.log
 
 artifacts/
+n8n-workflows/
 .DS_Store
 Thumbs.db

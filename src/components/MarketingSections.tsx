@@ -8,6 +8,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Testimonials } from "@/components/Testimonials";
 import type { LocalizedContent } from "@/lib/content";
+import { workflowHrefs } from "@/lib/workflows";
 
 type MarketingSectionProps = {
   content: LocalizedContent;
@@ -50,7 +51,11 @@ export function ServicesSection({ content, standalone = false }: MarketingSectio
           description={content.sections.services.description}
         />
         <div className="mt-12">
-          <CardGrid items={content.features} />
+          <CardGrid
+            items={content.features}
+            hrefs={workflowHrefs}
+            ctaLabel={content.workflowDetailsCta}
+          />
         </div>
       </div>
     </section>
