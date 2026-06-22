@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { NexaFlowChatWidget } from "@/components/NexaFlowChatWidget";
 
+import "@n8n/chat/style.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -40,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <LanguageProvider>{children}</LanguageProvider>
+        <NexaFlowChatWidget />
       </body>
     </html>
   );

@@ -18,6 +18,24 @@ npm run lint
 npm run build
 ```
 
+## n8n Chatbot
+
+The floating chatbot uses the official `@n8n/chat` package and reads its public Chat Trigger URL from:
+
+```bash
+NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL
+```
+
+For local development, copy `.env.example` to `.env.local` and set the production n8n Chat Trigger webhook URL.
+
+To update the production chatbot:
+
+1. Open n8n.
+2. Publish and activate the Chat Agent workflow.
+3. Copy the production Chat URL from the Chat Trigger.
+4. Add it to Vercel Environment Variables as `NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL`.
+5. Redeploy the website so Next.js includes the public variable in the client bundle.
+
 ## Deploy On Vercel
 
 1. Push this project to a GitHub, GitLab, Bitbucket, or Azure DevOps repository.

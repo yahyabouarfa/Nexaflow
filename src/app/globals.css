@@ -62,6 +62,78 @@ section {
   scroll-margin-top: 92px;
 }
 
+.nexaflow-n8n-chat {
+  --chat--font-family: Arial, Helvetica, sans-serif;
+  --chat--color--primary: #49e6ff;
+  --chat--color--primary-shade-50: #22d3ee;
+  --chat--color--primary--shade-100: #0891b2;
+  --chat--color--secondary: #2f7cff;
+  --chat--color-secondary-shade-50: #2563eb;
+  --chat--color-dark: #020617;
+  --chat--color-light: #f8fafc;
+  --chat--color-light-shade-50: #e2e8f0;
+  --chat--color-light-shade-100: #cbd5e1;
+  --chat--color-medium: #94a3b8;
+  --chat--color-typing: #64748b;
+  --chat--spacing: 1rem;
+  --chat--border-radius: 16px;
+  --chat--transition-duration: 0.2s;
+  --chat--window--width: min(390px, calc(100vw - 2rem));
+  --chat--window--height: min(640px, calc(100vh - 2rem));
+  --chat--window--bottom: 1rem;
+  --chat--window--right: 1rem;
+  --chat--window--z-index: 80;
+  --chat--window--border: 1px solid rgba(226, 232, 240, 0.9);
+  --chat--window--border-radius: 22px;
+  --chat--window--margin-bottom: 1rem;
+  --chat--header--background: #020617;
+  --chat--header--color: #ffffff;
+  --chat--header--padding: 1rem;
+  --chat--heading--font-size: 1.08rem;
+  --chat--subtitle--font-size: 0.82rem;
+  --chat--subtitle--line-height: 1.5;
+  --chat--message--font-size: 0.94rem;
+  --chat--message--padding: 0.82rem 0.95rem;
+  --chat--message--border-radius: 16px;
+  --chat--message-line-height: 1.55;
+  --chat--message--bot--background: #ffffff;
+  --chat--message--bot--color: #334155;
+  --chat--message--bot--border: 1px solid #e2e8f0;
+  --chat--message--user--background: #020617;
+  --chat--message--user--color: #ffffff;
+  --chat--toggle--size: 56px;
+  --chat--toggle--background: #49e6ff;
+  --chat--toggle--hover--background: #ffffff;
+  --chat--toggle--active--background: #22d3ee;
+  --chat--toggle--color: #020617;
+  --chat--input--background: #ffffff;
+  --chat--input--text-color: #020617;
+  --chat--input--border: 1px solid #e2e8f0;
+  --chat--input--border-active: 1px solid #49e6ff;
+  --chat--input--border-radius: 16px;
+  --chat--input--padding: 0.85rem;
+  --chat--input--placeholder--font-size: 0.92rem;
+  --chat--input--send--button--color: #2f7cff;
+  --chat--input--send--button--color-hover: #020617;
+  --chat--button--border-radius: 999px;
+  --chat--close--button--color-hover: #49e6ff;
+}
+
+@media (max-width: 640px) {
+  .nexaflow-n8n-chat {
+    --chat--window--width: calc(100vw - 1.5rem);
+    --chat--window--height: min(620px, calc(100dvh - 1.5rem));
+    --chat--window--bottom: 0.75rem;
+    --chat--window--right: 0.75rem;
+    --chat--toggle--size: 54px;
+  }
+
+  .nexaflow-whatsapp-widget {
+    bottom: 5.25rem;
+    right: 0.75rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
