@@ -1,6 +1,10 @@
 export const site = {
   name: "NexaFlow Agent",
   email: "hello@nexaflow.ai",
+  whatsapp: {
+    display: "+212 767 713 509",
+    number: "212767713509",
+  },
   location: "Remote-first automation studio",
   region: "Based in Germany - serving clients remotely",
   logo: {
