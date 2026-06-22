@@ -78,7 +78,8 @@ export function NexaFlowChatWidget() {
           mode: "window",
           showWindowCloseButton: true,
           showWelcomeScreen: false,
-          loadPreviousSession: true,
+          // Start a chat session immediately so the message input is visible.
+          loadPreviousSession: false,
           metadata: {
             source: "nexaflow-website",
             page: window.location.href,
