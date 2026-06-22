@@ -1,8 +1,8 @@
 export const site = {
   name: "NexaFlow Agent",
   email: "hello@nexaflow.ai",
-  phone: "+1 (555) 012-8942",
   location: "Remote-first automation studio",
+  region: "Based in Germany - serving clients remotely",
   logo: {
     useImage: true,
     imagePath: "/logo-transparent.png",
@@ -118,10 +118,10 @@ export const localizedContent = {
           "NexaFlow Agent keeps the routine work moving while your team spends more time on judgment, relationships, and strategy.",
       },
       testimonials: {
-        eyebrow: "Testimonials",
-        title: "Professional teams use NexaFlow Agent to remove friction from follow-up.",
+        eyebrow: "Agent outcomes",
+        title: "What our agents deliver",
         description:
-          "A few representative examples of the outcomes automation-focused teams look for.",
+          "Practical capabilities configured around your services, policies, tone, and handoff rules.",
       },
       faq: {
         eyebrow: "FAQ",
@@ -161,49 +161,49 @@ export const localizedContent = {
         icon: "Headphones",
         title: "AI Customer Support Agent",
         description:
-          "Resolve common customer questions instantly while escalating nuanced cases to your team.",
+          "Answers your customers' questions instantly, around the clock, using your own FAQs, policies, and documents. Handles repetitive questions and hands off to your team for anything complex. Best for businesses fielding the same questions over and over.",
       },
       {
         icon: "BadgeCheck",
         title: "AI Lead Qualification Agent",
         description:
-          "Score, enrich, and route leads based on fit, urgency, budget, and buying intent.",
+          "Talks to incoming leads, scores them by fit and intent, and routes the promising ones to your team so your time goes to the leads most likely to buy. Best for teams getting more inquiries than they can manually sort.",
       },
       {
         icon: "Handshake",
         title: "AI Sales Assistant",
         description:
-          "Answer product questions, recommend next steps, and keep prospects moving toward a decision.",
+          "Answers product questions, recommends the right option, and guides prospects toward a decision like a knowledgeable salesperson available 24/7. Best for online stores and service businesses.",
       },
       {
         icon: "CalendarClock",
         title: "AI Appointment Booking",
         description:
-          "Book, reschedule, remind, and confirm meetings without manual back-and-forth.",
+          "Lets your customers book, reschedule, and cancel appointments 24/7 through chat. Syncs to your calendar, respects your business hours, and confirms automatically. Best for salons, barbershops, clinics, consultants, and any business that runs on appointments.",
       },
       {
         icon: "Send",
         title: "AI Email & WhatsApp Automation",
         description:
-          "Trigger personalized follow-ups across the channels your customers already use.",
+          "Brings our agents to the channels your customers already use, replying, answering, and booking automatically over WhatsApp or email. Best for businesses whose customers live in WhatsApp or email.",
       },
       {
         icon: "GitBranch",
         title: "AI Workflow Automation",
         description:
-          "Turn repetitive operations into intelligent workflows with approvals, checks, and alerts.",
+          "Connects multi-step business processes such as approvals, alerts, routing, and follow-ups so routine operations run themselves. Best for operations-heavy businesses with repetitive internal tasks.",
       },
       {
         icon: "DatabaseZap",
         title: "CRM Integration",
         description:
-          "Sync conversations, lead status, tags, notes, and tasks with your existing customer system.",
+          "Logs every customer conversation and updates your contacts and deals automatically, so your records stay current without manual data entry. Best for teams already using a CRM.",
       },
       {
         icon: "ChartSpline",
         title: "Analytics & Reporting",
         description:
-          "Track automation volume, lead outcomes, response speed, and opportunities for improvement.",
+          "Tracks your agents' conversations and outcomes, then gives you clear summaries of volume, response times, and conversions so you can see what's working. Best for owners who want visibility into their automation.",
       },
     ],
     steps: [
@@ -341,30 +341,32 @@ export const localizedContent = {
       ],
     },
     benefits: [
-      { value: "10+ hrs", label: "saved per week" },
+      { value: "Built to save", label: "10+ hours per week" },
       { value: "Instant", label: "lead replies" },
       { value: "24/7", label: "automated coverage" },
       { value: "Fewer", label: "repetitive tasks" },
-      { value: "Higher", label: "conversion intent" },
+      { value: "Designed", label: "to capture more leads" },
     ],
     testimonials: [
       {
-        quote:
-          "NexaFlow Agent helped us turn inbound inquiries into booked consultations without adding more admin work. The handoff to our team feels natural.",
-        name: "Maya Chen",
-        role: "Founder, Studio North",
+        title: "Always-on response",
+        description:
+          "Customers get instant answers and bookings 24/7, so fewer leads are missed outside business hours.",
       },
       {
-        quote:
-          "Our support response time improved in the first week. The agent handles common questions and gives our staff cleaner context when a person steps in.",
-        name: "Daniel Brooks",
-        role: "Operations Lead, Urban Retail Co.",
+        title: "Human handoff when it matters",
+        description:
+          "Agents handle the routine and pass complex cases to your team, with full context.",
       },
       {
-        quote:
-          "The biggest win was connecting our forms, CRM, and calendar. Leads now move through the pipeline with fewer delays and less manual checking.",
-        name: "Amira Patel",
-        role: "Growth Manager, Learnwise",
+        title: "Built around your business",
+        description:
+          "Each agent is configured to your services, prices, policies, and tone, not a generic template.",
+      },
+      {
+        title: "Maintained for you",
+        description:
+          "We monitor and improve your agents over time, so they keep getting better.",
       },
     ],
     faqs: [
@@ -427,11 +429,7 @@ export const localizedContent = {
           { label: "Sales Automation", href: "/services" },
           { label: "Workflow Automation", href: "/services" },
         ],
-        social: [
-          { label: "LinkedIn", href: "#" },
-          { label: "X", href: "#" },
-          { label: "YouTube", href: "#" },
-        ],
+        social: [],
       },
     },
     mobileCta: "Book Demo",
@@ -539,11 +537,11 @@ export const localizedContent = {
           "NexaFlow Agent garde les taches repetitives en mouvement pendant que votre equipe se concentre sur les decisions et les relations.",
       },
       testimonials: {
-        eyebrow: "Temoignages",
+        eyebrow: "Resultats agents",
         title:
-          "Des equipes professionnelles utilisent NexaFlow Agent pour fluidifier leur suivi.",
+          "Ce que nos agents apportent",
         description:
-          "Quelques exemples representatifs des resultats recherches par les equipes orientees automatisation.",
+          "Des capacites pratiques configurees autour de vos services, politiques, ton et regles de transfert.",
       },
       faq: {
         eyebrow: "FAQ",
@@ -763,30 +761,32 @@ export const localizedContent = {
       ],
     },
     benefits: [
-      { value: "10+ h", label: "gagnees par semaine" },
+      { value: "Concu pour", label: "economiser 10+ h/semaine" },
       { value: "Instant", label: "reponse aux leads" },
       { value: "24/7", label: "couverture automatisee" },
       { value: "Moins", label: "de taches repetitives" },
-      { value: "Plus", label: "d'intention convertie" },
+      { value: "Concu", label: "pour capter plus de leads" },
     ],
     testimonials: [
       {
-        quote:
-          "NexaFlow Agent nous a aide a transformer les demandes entrantes en consultations reservees sans ajouter d'admin. Le transfert a l'equipe est naturel.",
-        name: "Maya Chen",
-        role: "Fondatrice, Studio North",
+        title: "Reponse en continu",
+        description:
+          "Les clients obtiennent des reponses et des reservations instantanees 24/7, avec moins de leads manques hors horaires.",
       },
       {
-        quote:
-          "Notre temps de reponse support s'est ameliore des la premiere semaine. L'agent gere les questions courantes et donne un meilleur contexte a l'equipe.",
-        name: "Daniel Brooks",
-        role: "Responsable operations, Urban Retail Co.",
+        title: "Transfert humain quand il le faut",
+        description:
+          "Les agents gerent le routine et transmettent les cas complexes a votre equipe avec tout le contexte.",
       },
       {
-        quote:
-          "Le plus gros gain a ete la connexion entre formulaires, CRM et calendrier. Les leads avancent avec moins de delais et moins de verification manuelle.",
-        name: "Amira Patel",
-        role: "Growth Manager, Learnwise",
+        title: "Construit autour de votre entreprise",
+        description:
+          "Chaque agent est configure selon vos services, prix, politiques et ton, pas comme un modele generique.",
+      },
+      {
+        title: "Maintenu pour vous",
+        description:
+          "Nous surveillons et ameliorons vos agents dans le temps afin qu'ils continuent de progresser.",
       },
     ],
     faqs: [
@@ -849,11 +849,7 @@ export const localizedContent = {
           { label: "Automatisation ventes", href: "/services" },
           { label: "Automatisation workflow", href: "/services" },
         ],
-        social: [
-          { label: "LinkedIn", href: "#" },
-          { label: "X", href: "#" },
-          { label: "YouTube", href: "#" },
-        ],
+        social: [],
       },
     },
     mobileCta: "Demo",
@@ -953,10 +949,10 @@ export const localizedContent = {
           "NexaFlow Agent يحرك العمل المتكرر بينما يركز فريقك على القرارات والعلاقات.",
       },
       testimonials: {
-        eyebrow: "آراء العملاء",
-        title: "فرق محترفة تستخدم NexaFlow Agent لتقليل الاحتكاك في المتابعة.",
+        eyebrow: "نتائج الوكلاء",
+        title: "ما الذي يقدمه وكلاؤنا",
         description:
-          "أمثلة واقعية للنتائج التي تبحث عنها الفرق التي تريد الأتمتة.",
+          "قدرات عملية يتم إعدادها حول خدماتك وسياساتك ونبرة علامتك وقواعد التسليم لفريقك.",
       },
       faq: {
         eyebrow: "FAQ",
@@ -1174,30 +1170,32 @@ export const localizedContent = {
       ],
     },
     benefits: [
-      { value: "+10 س", label: "توفر أسبوعيا" },
+      { value: "مصمم لتوفير", label: "10+ ساعات أسبوعيا" },
       { value: "فوري", label: "رد على العملاء" },
       { value: "24/7", label: "تغطية آلية" },
       { value: "أقل", label: "مهام متكررة" },
-      { value: "أعلى", label: "نية تحويل" },
+      { value: "مصمم", label: "لالتقاط مزيد من العملاء" },
     ],
     testimonials: [
       {
-        quote:
-          "NexaFlow Agent ساعدنا على تحويل الطلبات الواردة إلى استشارات محجوزة دون زيادة العمل الإداري.",
-        name: "Maya Chen",
-        role: "مؤسسة Studio North",
+        title: "استجابة دائمة",
+        description:
+          "يحصل العملاء على إجابات وحجوزات فورية على مدار الساعة، مع تقليل فرص ضياع العملاء خارج أوقات العمل.",
       },
       {
-        quote:
-          "تحسن وقت الرد في الدعم من الأسبوع الأول. الوكيل يتعامل مع الأسئلة الشائعة ويعطي الفريق سياقا أوضح.",
-        name: "Daniel Brooks",
-        role: "مسؤول العمليات، Urban Retail Co.",
+        title: "تسليم للإنسان عند الحاجة",
+        description:
+          "يتولى الوكلاء المهام الروتينية وينقلون الحالات المعقدة إلى فريقك مع السياق الكامل.",
       },
       {
-        quote:
-          "أكبر فائدة كانت ربط النماذج و CRM والتقويم. العملاء يتحركون داخل المسار بأقل تأخير.",
-        name: "Amira Patel",
-        role: "مديرة النمو، Learnwise",
+        title: "مصمم حول عملك",
+        description:
+          "يتم إعداد كل وكيل حسب خدماتك وأسعارك وسياساتك ونبرة علامتك، وليس كقالب عام.",
+      },
+      {
+        title: "تتم صيانته لك",
+        description:
+          "نراقب وكلاءك ونحسنهم بمرور الوقت حتى يستمروا في التطور.",
       },
     ],
     faqs: [
@@ -1260,11 +1258,7 @@ export const localizedContent = {
           { label: "أتمتة المبيعات", href: "/services" },
           { label: "أتمتة سير العمل", href: "/services" },
         ],
-        social: [
-          { label: "LinkedIn", href: "#" },
-          { label: "X", href: "#" },
-          { label: "YouTube", href: "#" },
-        ],
+        social: [],
       },
     },
     mobileCta: "احجز demo",

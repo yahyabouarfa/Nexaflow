@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { TestimonialsPage } from "@/components/SectionPages";
 
 export const metadata: Metadata = {
-  title: "Testimonials | NexaFlow Agent",
-  description: "Representative outcomes from teams using AI automation to improve follow-up and conversion.",
+  title: "Agent Outcomes | NexaFlow Agent",
+  description:
+    "What NexaFlow Agent automations are designed to deliver across response, handoff, customization, and maintenance.",
 };
 
 export default function Page() {

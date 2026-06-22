@@ -23,11 +23,13 @@ export function ButtonLink({
   className = "",
   ...props
 }: ButtonLinkProps) {
+  const chatClass = href === "/contact" ? "open-chat-demo" : "";
+
   return (
     <a
       href={href}
       {...props}
-      className={`inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-bold transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-bold transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 ${variants[variant]} ${chatClass} ${className}`}
     >
       {children}
     </a>

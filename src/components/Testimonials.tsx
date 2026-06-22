@@ -6,20 +6,19 @@ export function Testimonials({
   testimonials: LocalizedContent["testimonials"];
 }) {
   return (
-    <div className="grid gap-5 lg:grid-cols-3">
+    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
       {testimonials.map((testimonial) => (
-        <figure
-          key={testimonial.name}
+        <article
+          key={testimonial.title}
           className="rounded-[24px] border border-slate-200 bg-white p-6 shadow-[0_18px_52px_rgba(15,23,42,0.07)]"
         >
-          <blockquote className="text-base leading-8 text-slate-700">
-            “{testimonial.quote}”
-          </blockquote>
-          <figcaption className="mt-6 border-t border-slate-100 pt-5">
-            <p className="font-black text-slate-950">{testimonial.name}</p>
-            <p className="mt-1 text-sm font-semibold text-slate-500">{testimonial.role}</p>
-          </figcaption>
-        </figure>
+          <h3 className="text-lg font-black leading-snug text-slate-950">
+            {testimonial.title}
+          </h3>
+          <p className="mt-4 text-sm leading-7 text-slate-600">
+            {testimonial.description}
+          </p>
+        </article>
       ))}
     </div>
   );

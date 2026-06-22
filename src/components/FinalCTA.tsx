@@ -27,8 +27,8 @@ export function FinalCTA({
           {finalCta.description}
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <ButtonLink href="mailto:hello@nexaflow.ai">{finalCta.primaryCta}</ButtonLink>
-          <ButtonLink href="mailto:hello@nexaflow.ai" variant="secondary">
+          <ButtonLink href="/contact">{finalCta.primaryCta}</ButtonLink>
+          <ButtonLink href="/contact" variant="secondary">
             {finalCta.secondaryCta}
           </ButtonLink>
         </div>
