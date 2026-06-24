@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const chatTargetId = "nexaflow-n8n-chat";
+const chatProxyUrl = "/api/n8n-chat";
 
 declare global {
   interface Window {
@@ -12,10 +13,10 @@ declare global {
 
 export function NexaFlowChatWidget() {
   const targetRef = useRef<HTMLDivElement>(null);
-  const webhookUrl = process.env.NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL?.trim();
+  const configuredWebhookUrl = process.env.NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL?.trim();
 
   useEffect(() => {
-    if (!webhookUrl) {
+    if (!configuredWebhookUrl) {
       if (process.env.NODE_ENV !== "production") {
         console.warn(
           "NexaFlow chat widget hidden: NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL is not set.",
@@ -87,7 +88,7 @@ export function NexaFlowChatWidget() {
         }
 
         chatApp = createChat({
-          webhookUrl,
+          webhookUrl: chatProxyUrl,
           target,
           mode: "window",
           showWindowCloseButton: true,
@@ -99,12 +100,12 @@ export function NexaFlowChatWidget() {
             page: window.location.href,
           },
           initialMessages: [
-            "Hi! I'm Nexa, NexaFlow's assistant 👋",
+            "Hi! I'm Nexa, NexaFlow's assistant \u{1F44B}",
             "Ask me about our AI agents, or tell me what you'd like to automate.",
           ],
           i18n: {
             en: {
-              title: "Nexa — NexaFlow Assistant",
+              title: "Nexa \u2014 NexaFlow Assistant",
               subtitle: "Ask about our AI agents or get a free custom build",
               footer: "",
               getStarted: "New Conversation",
@@ -127,9 +128,9 @@ export function NexaFlowChatWidget() {
       chatApp?.unmount();
       target.innerHTML = "";
     };
-  }, [webhookUrl]);
+  }, [configuredWebhookUrl]);
 
-  if (!webhookUrl) {
+  if (!configuredWebhookUrl) {
     return null;
   }
 

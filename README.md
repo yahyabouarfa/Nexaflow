@@ -20,7 +20,9 @@ npm run build
 
 ## n8n Chatbot
 
-The floating chatbot uses the official `@n8n/chat` package and reads its public Chat Trigger URL from:
+The floating chatbot uses the official `@n8n/chat` package. The browser sends chat
+requests to the same-origin Next.js route at `/api/n8n-chat`, and that route forwards
+requests to the n8n Chat Trigger URL from:
 
 ```bash
 NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL
