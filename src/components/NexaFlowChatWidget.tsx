@@ -4,6 +4,12 @@ import { useEffect, useRef } from "react";
 
 const chatTargetId = "nexaflow-n8n-chat";
 
+declare global {
+  interface Window {
+    openNexaChat?: () => void;
+  }
+}
+
 export function NexaFlowChatWidget() {
   const targetRef = useRef<HTMLDivElement>(null);
   const webhookUrl = process.env.NEXT_PUBLIC_N8N_CHAT_WEBHOOK_URL?.trim();
@@ -30,6 +36,26 @@ export function NexaFlowChatWidget() {
     let chatApp: { unmount: () => void } | undefined;
     let isMounted = true;
 
+    function getChatToggle() {
+      return document.querySelector<HTMLElement>(".chat-window-toggle");
+    }
+
+    function isChatWindowOpen() {
+      const chatWindow = document.querySelector<HTMLElement>(".chat-window");
+
+      return chatWindow !== null && window.getComputedStyle(chatWindow).display !== "none";
+    }
+
+    function openNexaChat() {
+      const chatToggle = getChatToggle();
+
+      if (!chatToggle || isChatWindowOpen()) {
+        return;
+      }
+
+      chatToggle.click();
+    }
+
     function handleDemoClick(event: MouseEvent) {
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
         return;
@@ -47,23 +73,11 @@ export function NexaFlowChatWidget() {
         return;
       }
 
-      const chatToggle = document.querySelector<HTMLElement>(".chat-window-toggle");
-
-      if (!chatToggle) {
-        return;
-      }
-
       event.preventDefault();
-
-      const chatWindow = document.querySelector<HTMLElement>(".chat-window");
-      const isChatOpen =
-        chatWindow !== null && window.getComputedStyle(chatWindow).display !== "none";
-
-      if (!isChatOpen) {
-        chatToggle.click();
-      }
+      openNexaChat();
     }
 
+    window.openNexaChat = openNexaChat;
     document.addEventListener("click", handleDemoClick);
 
     void import("@n8n/chat")
@@ -85,15 +99,16 @@ export function NexaFlowChatWidget() {
             page: window.location.href,
           },
           initialMessages: [
-            "Hi! I'm the NexaFlow assistant. Ask me about AI agents, automation, pricing, or how we can help your business.",
+            "Hi! I'm Nexa, NexaFlow's assistant 👋",
+            "Ask me about our AI agents, or tell me what you'd like to automate.",
           ],
           i18n: {
             en: {
-              title: "NexaFlow Assistant",
+              title: "Nexa — NexaFlow Assistant",
               subtitle: "Ask about our AI agents or get a free custom build",
               footer: "",
               getStarted: "New Conversation",
-              inputPlaceholder: "Ask about AI agents, pricing, automation...",
+              inputPlaceholder: "Ask Nexa about agents, pricing, or automation...",
               closeButtonTooltip: "Close chat",
             },
           },
@@ -108,6 +123,7 @@ export function NexaFlowChatWidget() {
     return () => {
       isMounted = false;
       document.removeEventListener("click", handleDemoClick);
+      delete window.openNexaChat;
       chatApp?.unmount();
       target.innerHTML = "";
     };
